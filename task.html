@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#contact">Web Design</a></li>
+                    <li><a href="#seo-services">SEO Services</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+                <a href="#services" class="dropbtn">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#web-design">Web Design</a></li>
+                    <li><a href="#seo-services">SEO Services</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Your one-stop solution for all digital needs.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            We are a team of dedicated professionals specializing in web development, 
+            SEO, and digital marketing. Our mission is to help businesses thrive online.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Web Design</h3>
+            <p>Crafting visually stunning and user-friendly websites tailored to your brand.</p>
+        </div>
+        <div class="service-item">
+            <h3>SEO Services</h3>
+            <p>Optimizing your website to rank higher on search engines and drive organic traffic.</p>
+        </div>
+        <div class="service-item">
+            <h3>Marketing</h3>
+            <p>Creating impactful marketing campaigns to reach your target audience.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
